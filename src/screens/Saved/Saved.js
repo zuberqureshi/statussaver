@@ -63,23 +63,18 @@ const Saved = () => {
         name:'Danish',
         img:require('../../assets/d.jpeg')
     },
-    {
-        name:'Danish',
-        img:'',
-       url:"https://cornstatus.com/wp-content/uploads/2022/01/Best-Whatsapp-Status-Video-0013.mp4"
-    },
 
   
 ]
 
 
 const renderItem = (props) => {
-    console.log("props FLat",props.item.url)
+    console.log("props FLat",props.item)
      
     return (
       <Item
         name={props.item.name}
-        url={props.item.url}
+
         img={props.item.img}
 
        
@@ -88,7 +83,7 @@ const renderItem = (props) => {
     );
   };
 
-  const Item = ({img, onPress,url}) => {
+  const Item = ({img, onPress}) => {
     // console.log("flatlist item",img)
 
     return (
@@ -97,13 +92,12 @@ const renderItem = (props) => {
 
 
         <View style={{width:WIDTH/2-responsiveWidth(0.2),height:HEIGHT*0.2,backgroundColor:"green",marginHorizontal:responsiveWidth(0.1),marginVertical:responsiveWidth(0.1)}} >
-        { url!=undefined ?
+
         
-          <Image source={img}  style={{resizeMode:'stretch',width:'100%',height:'100%'}} /> :
-          <Image source={img}  style={{resizeMode:'stretch',width:'100%',height:'100%'}} />
+          <Image source={img}  style={{resizeMode:'stretch',width:'100%',height:'100%'}} /> 
+
        
-        
-         }
+
        
         </View>
 
