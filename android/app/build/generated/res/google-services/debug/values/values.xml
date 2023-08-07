@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">211580757199-848nko8kkga6uer4ck4qniphoja4rdkv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">211580757199</string>
+    <string name="google_api_key" translatable="false">AIzaSyDzJBmJ0L-nVT5wa_raNQSRcaZRuSG6Oh4</string>
+    <string name="google_app_id" translatable="false">1:211580757199:android:672c3c1847f2c6dd5443ba</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDzJBmJ0L-nVT5wa_raNQSRcaZRuSG6Oh4</string>
+    <string name="google_storage_bucket" translatable="false">statussaver-16db6.appspot.com</string>
+    <string name="project_id" translatable="false">statussaver-16db6</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "211580757199",
+    "project_id": "statussaver-16db6",
+    "storage_bucket": "statussaver-16db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211580757199:android:672c3c1847f2c6dd5443ba",
+        "android_client_info": {
+          "package_name": "com.statussaver.zs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211580757199-ucueq8nsoi5pet2ujg7mh9bcp4dvtkjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.statussaver.zs",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "211580757199-848nko8kkga6uer4ck4qniphoja4rdkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzJBmJ0L-nVT5wa_raNQSRcaZRuSG6Oh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211580757199-848nko8kkga6uer4ck4qniphoja4rdkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
