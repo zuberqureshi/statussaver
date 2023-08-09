@@ -26,23 +26,26 @@ com.statussaver.zs.app-jetified-lifecycle-process-2.4.0-24 C:\Users\dell\.gradle
 com.statussaver.zs.app-lifecycle-viewmodel-2.3.1-25 C:\Users\dell\.gradle\caches\transforms-3\bfcb34c4c876af38f9198ad1b96b2c43\transformed\lifecycle-viewmodel-2.3.1\res
 com.statussaver.zs.app-jetified-tracing-1.1.0-26 C:\Users\dell\.gradle\caches\transforms-3\c04f20a7bc36b07e3515ce658dcf3c22\transformed\jetified-tracing-1.1.0\res
 com.statussaver.zs.app-lifecycle-runtime-2.4.0-27 C:\Users\dell\.gradle\caches\transforms-3\c0dfd381427ee0f0521abcb38680a202\transformed\lifecycle-runtime-2.4.0\res
-com.statussaver.zs.app-sqlite-framework-2.2.0-28 C:\Users\dell\.gradle\caches\transforms-3\ea530cd7830f5e51316c0bacc090f188\transformed\sqlite-framework-2.2.0\res
-com.statussaver.zs.app-jetified-react-android-0.72.3-debug-29 C:\Users\dell\.gradle\caches\transforms-3\ef7b7082a4fed21bc2a02e3c84543346\transformed\jetified-react-android-0.72.3-debug\res
-com.statussaver.zs.app-transition-1.2.0-30 C:\Users\dell\.gradle\caches\transforms-3\fe95e0326f3651ceb535c27781f2602d\transformed\transition-1.2.0\res
-com.statussaver.zs.app-google-services-31 D:\native Project\statussaver\android\app\build\generated\res\google-services\debug
-com.statussaver.zs.app-pngs-32 D:\native Project\statussaver\android\app\build\generated\res\pngs\debug
-com.statussaver.zs.app-resValues-33 D:\native Project\statussaver\android\app\build\generated\res\resValues\debug
-com.statussaver.zs.app-rs-34 D:\native Project\statussaver\android\app\build\generated\res\rs\debug
-com.statussaver.zs.app-mergeDebugResources-35 D:\native Project\statussaver\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.statussaver.zs.app-mergeDebugResources-36 D:\native Project\statussaver\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.statussaver.zs.app-merged_res-37 D:\native Project\statussaver\android\app\build\intermediates\merged_res\debug
-com.statussaver.zs.app-debug-38 D:\native Project\statussaver\android\app\src\debug\res
-com.statussaver.zs.app-main-39 D:\native Project\statussaver\android\app\src\main\res
-com.statussaver.zs.app-packaged_res-40 D:\native Project\statussaver\node_modules\@react-native-firebase\app\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-41 D:\native Project\statussaver\node_modules\@react-native-firebase\messaging\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-42 D:\native Project\statussaver\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-43 D:\native Project\statussaver\node_modules\react-native-linear-gradient\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-44 D:\native Project\statussaver\node_modules\react-native-pager-view\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-45 D:\native Project\statussaver\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-46 D:\native Project\statussaver\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
-com.statussaver.zs.app-packaged_res-47 D:\native Project\statussaver\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-jetified-lottie-5.1.1-28 C:\Users\dell\.gradle\caches\transforms-3\dc6d2e06f487c07f97643c54b7136e51\transformed\jetified-lottie-5.1.1\res
+com.statussaver.zs.app-sqlite-framework-2.2.0-29 C:\Users\dell\.gradle\caches\transforms-3\ea530cd7830f5e51316c0bacc090f188\transformed\sqlite-framework-2.2.0\res
+com.statussaver.zs.app-jetified-react-android-0.72.3-debug-30 C:\Users\dell\.gradle\caches\transforms-3\ef7b7082a4fed21bc2a02e3c84543346\transformed\jetified-react-android-0.72.3-debug\res
+com.statussaver.zs.app-transition-1.2.0-31 C:\Users\dell\.gradle\caches\transforms-3\fe95e0326f3651ceb535c27781f2602d\transformed\transition-1.2.0\res
+com.statussaver.zs.app-google-services-32 D:\native Project\statussaver\android\app\build\generated\res\google-services\debug
+com.statussaver.zs.app-pngs-33 D:\native Project\statussaver\android\app\build\generated\res\pngs\debug
+com.statussaver.zs.app-resValues-34 D:\native Project\statussaver\android\app\build\generated\res\resValues\debug
+com.statussaver.zs.app-rs-35 D:\native Project\statussaver\android\app\build\generated\res\rs\debug
+com.statussaver.zs.app-mergeDebugResources-36 D:\native Project\statussaver\android\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.statussaver.zs.app-mergeDebugResources-37 D:\native Project\statussaver\android\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.statussaver.zs.app-merged_res-38 D:\native Project\statussaver\android\app\build\intermediates\merged_res\debug
+com.statussaver.zs.app-debug-39 D:\native Project\statussaver\android\app\src\debug\res
+com.statussaver.zs.app-main-40 D:\native Project\statussaver\android\app\src\main\res
+com.statussaver.zs.app-packaged_res-41 D:\native Project\statussaver\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-42 D:\native Project\statussaver\node_modules\@react-native-firebase\app\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-43 D:\native Project\statussaver\node_modules\@react-native-firebase\messaging\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-44 D:\native Project\statussaver\node_modules\lottie-react-native\src\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-45 D:\native Project\statussaver\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-46 D:\native Project\statussaver\node_modules\react-native-linear-gradient\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-47 D:\native Project\statussaver\node_modules\react-native-pager-view\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-48 D:\native Project\statussaver\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-49 D:\native Project\statussaver\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
+com.statussaver.zs.app-packaged_res-50 D:\native Project\statussaver\node_modules\react-native-vector-icons\android\build\intermediates\packaged_res\debug

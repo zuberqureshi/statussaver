@@ -69,7 +69,7 @@ const Saved = () => {
 
 
 const renderItem = (props) => {
-    console.log("props FLat",props.item)
+    // console.log("props FLat",props.item)
      
     return (
       <Item

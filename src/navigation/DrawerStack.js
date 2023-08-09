@@ -1,5 +1,5 @@
 import { FlatList, Image, StyleSheet, Text, View,Dimensions, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import { responsiveWidth,responsiveHeight,responsiveFontSize } from 'react-native-responsive-dimensions';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import TopStack from './TopStack';
@@ -7,12 +7,36 @@ import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontA from 'react-native-vector-icons/FontAwesome6';
 import WABusiness from '../screens/WABusiness/WABusiness';
 import CustomDrawer from '../components/CustomDrawer';
+import Splash from '../screens/Splash/Splash';
 
 
 
 const Drawer = createDrawerNavigator();
 
+
  function DrawerStack(props) {
+
+
+  const [splashShow, setSplashShow] = useState(true)
+
+
+  const load = ()=>{
+
+    
+
+    setTimeout(() => {
+      setSplashShow(false)
+     }, 2000);
+  }
+
+  useEffect(() => {
+   
+    
+    load()
+
+    console.log(" inside useeffect Drawer  ");
+  
+  }, []);
 
 
   return (
@@ -26,6 +50,8 @@ const Drawer = createDrawerNavigator();
 
        }}
      >
+
+     { splashShow &&  <Drawer.Screen name='Splash' component={Splash} options={{headerShown:false}} />}
       <Drawer.Screen name="Top" component={TopStack} options={{headerStyle:{
         backgroundColor:'#075e55',
       
