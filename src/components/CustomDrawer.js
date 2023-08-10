@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     marginVertical: responsiveWidth(1.9),
  
     flexDirection:'row',
-    borderRadius:responsiveWidth(1)
+    borderRadius:responsiveWidth(2.5)
   },
   title: {
     fontSize: responsiveFontSize(2.1),

@@ -46,6 +46,8 @@ const Drawer = createDrawerNavigator();
         drawerActiveBackgroundColor:'#e1ebea',
         drawerActiveTintColor:'#075e55',
         drawerInactiveTintColor:'#333',
+        drawerType:'slide',
+        drawerItemStyle:{borderRadius:responsiveWidth(2.5)}
         
 
        }}
