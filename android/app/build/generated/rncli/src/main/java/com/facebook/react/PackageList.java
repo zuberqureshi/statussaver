@@ -19,6 +19,8 @@ import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 // lottie-react-native
 import com.airbnb.android.react.lottie.LottiePackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-linear-gradient
@@ -82,6 +84,7 @@ public class PackageList {
       new ReactNativeFirebaseAppPackage(),
       new ReactNativeFirebaseMessagingPackage(),
       new LottiePackage(),
+      new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new LinearGradientPackage(),
       new PagerViewPackage(),

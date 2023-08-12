@@ -1,5 +1,8 @@
-import { FlatList, Image, StyleSheet, Text, View,Dimensions, TouchableOpacity } from 'react-native'
+import { FlatList, Image, StyleSheet, Text, View,Dimensions, PermissionsAndroid, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { useLayoutEffect, useState, useEffect, useRef } from "react";
+import RNFS from 'react-native-fs';
+
 import FontA from 'react-native-vector-icons/FontAwesome';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import pr from '../../assets/d.jpeg'
@@ -9,8 +12,63 @@ const WIDTH = Dimensions.get('window').width
 const HEIGHT = Dimensions.get('window').height
 
 const Status = () => {
+  const [list, setList] = useState()
 
-    var data=[
+  useEffect(() => {
+
+    getStatuses();
+  },[]);
+
+  async function requestStoragePermission() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+        {
+          title: 'Whata Status Access',
+          message: 'Whata status required storage access',
+          buttonNeutral: 'Ask Me Later',
+          buttonNegative: 'Cancel',
+          buttonPositive: 'OK',
+        },
+      );
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        console.log('You can use the storage');
+        return true;
+        //this.getDirectoryPerm();
+      } else {
+        console.log('Storage permission denied');
+        return false;
+      }
+    } catch (err) {
+      return false;
+    }
+  }
+  getStatuses = async () => {
+
+    //const reader = await RNFS.readDir(path);
+
+    let granted = await requestStoragePermission();
+    if (granted) {
+      let whatsappFileUri = '/storage/emulated/0/WhatsApp/Media/.Statuses';
+      RNFS.readDir(whatsappFileUri)
+        .then(result => {
+           setList(result);
+          result.map( (item,index  )=>{
+            //console.log('GOTRESULT:'+index, item);
+
+          }
+            
+            
+            )
+        
+        })
+        .catch(err => {
+          console.log('error: ', err.message, err.code);
+        });
+    }
+  };
+
+     var data=[
         {
             name:'Danish',
             img:require('../../assets/d.jpeg')
@@ -73,13 +131,13 @@ const Status = () => {
 
 
     const renderItem = (props) => {
-        // console.log("props FLat",props.item)
-         
+         console.log("props FLat",props.item.name,props.item.path )
+         if(props.item.name== '.nomedia'  ) return;
         return (
           <Item
             name={props.item.name}
 
-            img={props.item.img}
+            img={props.item.path}
 
            
             onPress={() => { }}
@@ -88,13 +146,13 @@ const Status = () => {
       };
 
       const Item = ({img, onPress}) => {
-        // console.log("flatlist item",)
+         console.log("flatlist item",img)
     
         return (
           <>
           <View style={{width:WIDTH,height:HEIGHT*0.1,marginBottom:responsiveWidth(2),flexDirection:'row',gap:responsiveWidth(5),alignItems:'center',borderBottomWidth:responsiveWidth(0.3),borderColor:'#ccc',paddingHorizontal:responsiveWidth(2),}} >
 
-            <Image source={img}  style={{width:responsiveWidth(16),height:responsiveHeight(8),resizeMode:'contain',borderRadius:responsiveWidth(10)}} />
+            <Image source={{uri: img}}  style={{width:responsiveWidth(16),height:responsiveHeight(8),resizeMode:'contain',borderRadius:responsiveWidth(10)}} />
             
             <View style={{gap:responsiveWidth(2)}} >
                 <Text style={{color:'#b8b8b8'}} >26-07-2023</Text>
@@ -138,7 +196,7 @@ const Status = () => {
     <View style={styles.mainContainer} >
      
      <FlatList
-          data={data}
+          data={list}
           renderItem={renderItem}
           ListEmptyComponent={Empty}
           showsVerticalScrollIndicator={false}
