@@ -24,7 +24,7 @@ const [ShowText, setShowText] = useState(false)
   
     return () => {
    
-      console.log("time Clear",fill)
+      // console.log("time Clear",fill)
     }
 
 

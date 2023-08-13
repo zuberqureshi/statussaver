@@ -7,8 +7,8 @@ import FontA from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
-const WIDTH = Dimensions.get('window').width
-const HEIGHT = Dimensions.get('window').height
+const WIDTH = Dimensions.get('screen').width
+const HEIGHT = Dimensions.get('screen').height
 
 const CustomDrawer = (props) => {
 

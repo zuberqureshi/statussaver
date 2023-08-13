@@ -7,6 +7,7 @@ import FontA from 'react-native-vector-icons/FontAwesome';
 import MCIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import pr from '../../assets/d.jpeg'
 import { responsiveWidth,responsiveHeight,responsiveFontSize } from 'react-native-responsive-dimensions';
+import * as ScopedStorage from "react-native-scoped-storage"
 
 const WIDTH = Dimensions.get('window').width
 const HEIGHT = Dimensions.get('window').height
@@ -45,13 +46,21 @@ const Status = () => {
   }
   getStatuses = async () => {
 
+    let dir = await ScopedStorage.openDocumentTree(true);
+   // let dir = await ScopedStorage.openDocument('/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Statuses');
+
+    console.log('path internaldir:', dir );
+
+    var dr = await RNFS.DownloadDirectoryPath
     //const reader = await RNFS.readDir(path);
 
     let granted = await requestStoragePermission();
     if (granted) {
-      let whatsappFileUri = '/storage/emulated/0/WhatsApp/Media/.Statuses';
+      let whatsappFileUri = '/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/';
       RNFS.readDir(whatsappFileUri)
         .then(result => {
+          console.log('readdirectory:',result);
+
            setList(result);
           result.map( (item,index  )=>{
 

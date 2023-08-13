@@ -31,6 +31,8 @@ import com.reactnativepagerview.PagerViewPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
+// react-native-scoped-storage
+import com.ammarahmed.scopedstorage.RNScopedStoragePackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-vector-icons
@@ -90,6 +92,7 @@ public class PackageList {
       new PagerViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
+      new RNScopedStoragePackage(),
       new RNScreensPackage(),
       new VectorIconsPackage()
     ));
