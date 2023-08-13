@@ -13,7 +13,7 @@ const HEIGHT = Dimensions.get('window').height
 
 const Status = () => {
   const [list, setList] = useState()
-
+  const dataL =[];
   useEffect(() => {
 
     getStatuses();
@@ -54,7 +54,9 @@ const Status = () => {
         .then(result => {
            setList(result);
           result.map( (item,index  )=>{
-            //console.log('GOTRESULT:'+index, item);
+
+            dataL.push({name:item.name, img:item.path })
+            console.log('GOTRESULT:'+index, item.path);
 
           }
             
@@ -67,6 +69,7 @@ const Status = () => {
         });
     }
   };
+        console.log('GOTRESULT:', dataL);
 
      var data=[
         {
@@ -131,7 +134,7 @@ const Status = () => {
 
 
     const renderItem = (props) => {
-         console.log("props FLat",props.item.name,props.item.path )
+       //  console.log("props FLat",props.item.name,props.item.path )
          if(props.item.name== '.nomedia'  ) return;
         return (
           <Item
@@ -146,13 +149,13 @@ const Status = () => {
       };
 
       const Item = ({img, onPress}) => {
-         console.log("flatlist item",img)
+       //  console.log("flatlist item",img)
     
         return (
           <>
           <View style={{width:WIDTH,height:HEIGHT*0.1,marginBottom:responsiveWidth(2),flexDirection:'row',gap:responsiveWidth(5),alignItems:'center',borderBottomWidth:responsiveWidth(0.3),borderColor:'#ccc',paddingHorizontal:responsiveWidth(2),}} >
 
-            <Image source={{uri: img}}  style={{width:responsiveWidth(16),height:responsiveHeight(8),resizeMode:'contain',borderRadius:responsiveWidth(10)}} />
+            <Image source={{uri: `file://${img}` }}  style={{width:responsiveWidth(16),height:responsiveHeight(8),resizeMode:'contain',borderRadius:responsiveWidth(10)}} />
             
             <View style={{gap:responsiveWidth(2)}} >
                 <Text style={{color:'#b8b8b8'}} >26-07-2023</Text>
