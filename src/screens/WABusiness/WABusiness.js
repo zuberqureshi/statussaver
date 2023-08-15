@@ -1,11 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+  import React, {useState} from 'react';
+import { TouchableOpacity,View, Text, StyleSheet, Share } from 'react-native';
 
+import AgoraUIKit from 'agora-rn-uikit';
 const WABusIness = () => {
+
+  const [videoCall, setVideoCall] = useState(true);
+  const connectionData = {
+    appId: 'c0dcab8fed8d49ff9de7ab077739ca3a',
+    channel: 'test123',
+    token:null
+  };
+  const rtcCallbacks = {
+    EndCall: () => { console.log( 'end call ' );   },
+  };
+
+
   return (
-    <View>
-      <Text>WABusIness</Text>
-    </View>
+    <>
+      <AgoraUIKit connectionData={connectionData} rtcCallbacks={rtcCallbacks} />
+ 
+    </>
   )
 }
 

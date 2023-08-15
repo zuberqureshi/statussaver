@@ -17,8 +17,12 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @react-native-firebase/messaging
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
+// agora-react-native-rtm
+import io.agora.agora_rtm.AgoraRTMPackage;
 // lottie-react-native
 import com.airbnb.android.react.lottie.LottiePackage;
+// react-native-agora
+import io.agora.rtc.ng.react.AgoraRtcNgPackage;
 // react-native-fs
 import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
@@ -85,7 +89,9 @@ public class PackageList {
       new AsyncStoragePackage(),
       new ReactNativeFirebaseAppPackage(),
       new ReactNativeFirebaseMessagingPackage(),
+      new AgoraRTMPackage(),
       new LottiePackage(),
+      new AgoraRtcNgPackage(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),
       new LinearGradientPackage(),
